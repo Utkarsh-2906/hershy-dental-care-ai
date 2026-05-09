@@ -1,0 +1,67 @@
+/* ===== BUTTONS ===== */
+
+.btn {
+    @apply px-24 py-12 inline-flex items-center justify-center rounded-btn border border-solid cursor-pointer font-century-gothic 1024:leading-normal text-16 max-768:text-14 tracking-nav uppercase whitespace-nowrap transition-all duration-300;
+}
+
+
+.btn-white {
+    @apply bg-white text-dark-blue border-white hover:bg-dark-blue hover:text-white hover:border-dark-blue;
+}
+
+.btn-dark-blue {
+    @apply bg-dark-blue text-white border-dark-blue hover:bg-transparent hover:text-dark-blue;
+}
+
+.btn-outline-dark-blue {
+    @apply bg-transparent text-dark-blue border-dark-blue hover:bg-granite hover:text-white;
+}
+
+.btn-outline-white {
+    @apply bg-transparent text-white border-white hover:bg-white hover:text-dark-blue;
+}
+
+.btn-light-cream {
+    @apply bg-light-cream text-dark-blue border-light-cream hover:bg-dark-blue hover:text-white hover:border-dark-blue;
+}
+
+/* ===== INPUTS / TEXTAREA / SELECT ===== */
+
+input,
+textarea,
+select {
+    @apply w-full bg-input-bg border border-[#B6B2AF]/70 rounded-btn max-576:rounded-[6px] px-15 py-12 max-576:py-8 font-kedebideri text-black tracking-label text-14
+      outline-none transition-all duration-300 focus:border-dark-blue;
+}
+input,
+textarea::placeholder {
+    @apply text-black/80
+}
+
+textarea {
+    @apply resize-none;
+}
+
+select {
+    @apply appearance-none cursor-pointer;
+}
+
+label {
+    @apply block font-kedebideri text-12 text-black tracking-label uppercase mb-8 1024:mb-12 ms-1;
+}
+
+/* ===== FOOTER NEWSLETTER INPUTS ===== */
+
+.footer-newsletter input {
+    @apply bg-transparent border-0 border-b border-solid border-white rounded-none px-4 pb-12 pt-0
+           text-13 text-white tracking-nav uppercase outline-none transition-colors duration-300
+           focus:border-white/80;
+}
+
+.footer-newsletter input::placeholder {
+    @apply text-white/60 uppercase text-13 tracking-newsletter;
+}
+
+.footer-newsletter-label {
+    @apply sr-only;
+}

@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@import "./fonts.css";
+@import "./base.css";
+@import "./components.css";
+@import "./layout.css";
+@import "./utilities.css";
+
+@theme {
+    /* ===== BREAKPOINTS ===== */
+    --breakpoint-1920: 1921px;
+    --breakpoint-1600: 1601px;
+    --breakpoint-1512: 1513px;
+    --breakpoint-1440: 1441px;
+    --breakpoint-1366: 1367px;
+    --breakpoint-1199: 1200px;
+    --breakpoint-1024: 1025px;
+    --breakpoint-992: 993px;
+    --breakpoint-768: 769px;
+    --breakpoint-640: 641px;
+    --breakpoint-576: 577px;
+    --breakpoint-425: 426px;
+    --breakpoint-375: 376px;
+
+    /* ===== SPACING ===== */
+    --spacing: 1px;
+
+    /* ===== FONT FAMILIES ===== */
+    --font-cormorant-garamond: "Cormorant Garamond", serif;
+    --font-kedebideri: "Kedebideri", sans-serif;
+    --font-century-gothic: "Century Gothic", sans-serif;
+
+    /* ===== COLORS ===== */
+    --color-white: #ffffff;
+    --color-dark-blue: #0b243a;
+    --color-black: #3a3a3a;
+    --color-granite: #3a3a3a;
+    --color-light-cream: #f8eee3;
+    --color-smoke: #e5e5e5;
+
+    /* ===== COLORS (extra) ===== */
+    --color-input-bg: #f6f7f8;
+    --color-off-white: #f8f8f8;
+    --color-dark-blue-mid: #263a4c;
+
+    /* ===== LETTER SPACING ===== */
+    --tracking-nav: 0.75px;
+    --tracking-label: 0.8px;
+    --tracking-caption: 3.2px;
+    --tracking-footer-heading: 2.4px;
+    --tracking-footer-link: 2.2px;
+    --tracking-footer-item: 1.1px;
+    --tracking-address: 0.22px;
+    --tracking-newsletter: 0.65px;
+
+    /* ===== BORDER RADIUS ===== */
+    --radius-btn: 8px;
+    --radius-card: 20px;
+    --radius-card-sm: 10px;
+    --radius-logo: 12px;
+
+    /* ===== BORDER WIDTH ===== */
+    --border-width-thin: 0.7px;
+
+    /* ===== LINE HEIGHT ===== */
+    --leading-heading: 1.2;
+    --leading-body: 24px;
+    --leading-footer-link: 33px;
+
+    /* ===== FONT SIZES ===== */
+
+    /* Headings — sorted descending */
+    --text-heading-1: 72px;
+    --text-heading-2: 48px;
+    --text-heading-3: 40px;
+    --text-heading-4: 32px;
+    --text-heading-5: 22px;
+    --text-heading-6: 20px;
+
+    /* Additional sizes */
+    --text-24: 24px;
+    --text-16: 16px;
+    --text-15: 15px;
+    --text-14: 14px;
+    --text-13: 13px;
+    --text-12: 12px;
+    --text-11: 11px;
+}

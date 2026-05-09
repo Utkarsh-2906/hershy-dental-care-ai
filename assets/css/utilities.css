@@ -1,0 +1,631 @@
+/* ===== BANNER SECTION ===== */
+
+.banner-section {
+  @apply relative overflow-hidden max-992:flex max-992:min-h-[80vh];
+}
+
+.banner-section.general-padding {
+  @apply py-350 max-1199:py-250 max-768:py-150 max-425:py-100;
+}
+
+.banner-section video {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.banner-overlay {
+  @apply absolute inset-0 bg-dark-blue/40;
+}
+
+.banner-overlay-gradient {
+  @apply absolute top-0 left-0 w-full h-350  bg-linear-to-b to-transparent from-dark-blue/40 z-1;
+}
+
+.banner-content {
+  @apply relative z-2 flex flex-col items-center justify-center gap-16 text-center max-992:m-auto;
+}
+
+.banner-section .content p {
+  @apply text-24 font-kedebideri leading-normal;
+}
+
+.banner-right-panel {
+  @apply absolute right-0 top-0 w-192 h-88.5 z-50 bg-white flex flex-col items-center justify-end pb-60 max-1024:hidden;
+}
+
+.banner-scroll-arrow {
+  @apply flex flex-col items-center cursor-pointer bg-transparent border-0 outline-none hover:opacity-60;
+}
+
+/* .banner-scroll-arrow svg line {
+  stroke-dasharray: 88;
+  stroke-dashoffset: 88;
+  animation: scrollLineDraw 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollLineDraw {
+  0%   { stroke-dashoffset: 88; opacity: 1; }
+  60%  { stroke-dashoffset: 0;  opacity: 1; }
+  85%  { stroke-dashoffset: 0;  opacity: 0; }
+  100% { stroke-dashoffset: 88; opacity: 0; }
+} */
+
+/* ===== SHARED: CAPTION DOT VARIANTS ===== */
+
+.caption-dot-white {
+  @apply bg-white!;
+}
+
+/* ===== SHARED: SECTION LABEL COLOR VARIANTS ===== */
+
+.section-label-dark-blue {
+  @apply text-dark-blue;
+}
+
+.section-label-white {
+  @apply text-white;
+}
+
+/* ===== SHARED: SECTION HEADING ===== */
+
+.section-heading {
+  @apply flex flex-col gap-24 max-1024:gap-12 items-center text-center;
+}
+
+.section-caption {
+  @apply flex items-center gap-9;
+}
+
+.caption-dot {
+  @apply block size-6 rounded-full bg-dark-blue flex-shrink-0;
+}
+
+.section-label {
+  @apply font-kedebideri text-16 tracking-caption uppercase;
+}
+
+/* ===== TREATMENTS SECTION ===== */
+
+.treatments-section {
+  @apply bg-off-white;
+}
+
+.treatments-container {
+  @apply flex flex-col gap-44 items-center;
+}
+
+.treatments-grid {
+  @apply grid grid-cols-3 gap-30 max-1024:grid-cols-2 max-768:grid-cols-1 w-full;
+}
+
+.treatment-card {
+  @apply relative overflow-hidden rounded-card flex flex-col justify-end aspect-580/780;
+}
+
+.treatment-card img {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.treatment-card-content-outer {
+  @apply absolute inset-0 flex flex-col justify-end;
+}
+
+.treatment-card-overlay {
+  @apply absolute inset-x-0 bottom-0 pointer-events-none;                                                                               
+    top: 25.64%;                                                                                                                          
+    background: linear-gradient(                                                                                                          
+      180deg,                                                                                                                             
+      rgba(11, 36, 58, 0) 45.86%,                                                                                                         
+      #0b243a 112.92%                                                                                                                     
+    );                                                                                                                                    
+    filter: blur(12px);                                                                                                                   
+    z-index: 0;  
+}
+
+.treatment-card-content {
+  @apply relative z-10 flex flex-col gap-24 max-576:gap-18 p-40 max-992:p-24;
+}
+
+.treatment-card-content .content p {
+  @apply font-kedebideri leading-28;
+}
+
+.treatments-cta {
+  @apply flex justify-center;
+}
+
+/* ===== SHARED: SECTION HEADING LEFT VARIANT ===== */
+
+.section-heading-left {
+  @apply items-start text-left;
+}
+
+/* ===== SHARED: CONTENT MUTED ===== */
+
+.content-muted p {
+  @apply text-black/60;
+}
+
+/* ===== OUR STORY SECTION ===== */
+
+.our-story-section {
+  @apply bg-white;
+}
+
+.our-story-inner {
+  @apply flex items-center gap-120 max-1199:gap-60 max-1024:flex-col max-1024:gap-50;
+}
+
+.our-story-content {
+  @apply relative flex flex-col gap-30 flex-1;
+}
+
+.our-story-text-block {
+  @apply flex flex-col gap-24 max-1024:gap-12;
+}
+/* .our-story-text-block .content p {
+  @apply font-cormorant-garamond max-w-690;
+} */
+
+.our-story-bg-img {
+  @apply absolute pointer-events-none select-none -top-[18%] max-1024:-top-[2%] left-0 w-231 max-1024:w-150 h-auto object-contain;
+}
+
+.our-story-video-col {
+  @apply flex-1 rounded-card overflow-hidden max-1024:w-full;
+}
+
+.our-story-video-col video {
+  @apply w-full h-full object-cover aspect-840/501;
+}
+
+/* ===== MEET DOCTORS SECTION ===== */
+
+.meet-doctors-section {
+  @apply bg-white relative overflow-hidden;
+}
+
+.meet-doctors-bg-wrap {
+  @apply absolute left-0 w-full h-540 pointer-events-none select-none;
+}
+
+.meet-doctors-bg-wrap-top {
+  @apply top-0;
+}
+
+.meet-doctors-bg-wrap-bottom {
+  @apply bottom-0;
+}
+
+.meet-doctors-bg-pattern {
+  @apply absolute inset-0 opacity-6;
+  background-image: url("../../assets/images/meet-doctors-pattern.png");
+  background-size: 180px 150px;
+  background-repeat: repeat;
+}
+
+.meet-doctors-bg-fade-top {
+  @apply absolute inset-0 bg-linear-to-t from-white to-transparent z-1;
+}
+
+.meet-doctors-bg-fade-bottom {
+  @apply absolute inset-0 bg-linear-to-b from-white to-transparent z-1;
+}
+
+.meet-doctors-container {
+  @apply relative z-2 flex flex-col gap-60;
+}
+
+.doctor-row {
+  @apply flex items-center gap-120 max-1199:gap-60 max-1024:flex-col max-1024:gap-40 max-576:gap-22;
+}
+
+.doctor-row-reverse {
+  @apply flex-row-reverse max-1024:flex-col;
+}
+
+.doctor-image-col {
+  @apply flex-1 relative rounded-card overflow-hidden max-1024:w-full aspect-840/720 max-1024:aspect-840/440 max-576:aspect-840/520;
+}
+
+.doctor-image-col img {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.doctor-content-col {
+  @apply flex-1 relative flex flex-col gap-30 max-1024:gap-20 justify-center max-1024:w-full;
+}
+
+.doctor-content-deco {
+  @apply absolute w-429 max-1024:w-300 max-768:w-200 h-auto object-contain  top-1/2 -translate-y-1/2 right-0  pointer-events-none select-none opacity-[6%];
+}
+
+.doctor-row-reverse .doctor-content-deco {
+  @apply right-auto;
+}
+
+.doctor-content-text {
+  @apply flex flex-col gap-24 max-1024:gap-12;
+}
+
+/* ===== WHAT WE DO BEST SECTION ===== */
+
+.wwdb-section {
+  @apply bg-dark-blue;
+}
+
+.wwdb-container {
+  @apply flex flex-col gap-44;
+}
+
+.wwdb-swiper {
+  @apply w-full overflow-hidden;
+}
+
+.wwdb-grid {
+  @apply flex items-stretch gap-30;
+}
+
+.wwdb-col-side {
+  @apply w-[25.5%] flex flex-col gap-30 shrink-0 self-stretch max-992:hidden;
+}
+
+.wwdb-col-center {
+  @apply flex-1 relative rounded-card overflow-hidden flex flex-col justify-end aspect-822/780 max-1512:aspect-822/850 max-1366:aspect-822/1060 max-992:aspect-840/720 max-576:aspect-auto;
+}
+
+.wwdb-col-center-bg {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.wwdb-center-overlay {
+  @apply absolute inset-x-0 bottom-0 pointer-events-none;
+  top: 25%;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 36, 58, 0) 45.86%,
+    #0b243a 112.92%
+  );
+  filter: blur(12px);
+  z-index: 0;
+}
+
+.wwdb-center-content {
+  @apply relative z-10 flex flex-col gap-24 p-40 max-768:p-24;
+}
+
+.wwdb-center-text {
+  @apply flex flex-col gap-9;
+}
+.wwdb-center-text > .content-white p {
+  @apply font-kedebideri text-white/60 1024:max-w-[90%];
+}
+
+.wwdb-center-text .small-title {
+  @apply flex items-center gap-16;
+}
+.wwdb-center-text .small-title .dot {
+  @apply w-6 h-6 bg-white rounded-full;
+}
+
+.wwdb-center-text .small-title .content p {
+  @apply font-kedebideri tracking-[20%];
+}
+
+.wwdb-center-footer {
+  @apply flex items-center justify-between flex-wrap gap-16;
+}
+
+.wwdb-nav {
+  @apply flex items-center gap-16;
+}
+
+.wwdb-nav-btn {
+  @apply size-48 max-768:size-32 shrink-0 cursor-pointer transition-opacity duration-300 hover:opacity-70 bg-white rounded-full grid place-items-center;
+}
+
+.wwdb-nav-btn img {
+  @apply size-16 max-768:size-12 object-contain;
+}
+
+.wwdb-side-card {
+  @apply relative overflow-hidden rounded-card flex-1;
+}
+
+.wwdb-side-card img {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.wwdb-text-card {
+  @apply flex flex-col justify-center gap-8 rounded-card p-24 flex-1 bg-dark-blue-mid;
+}
+
+.wwdb-text-card .content p {
+  @apply font-kedebideri opacity-50 leading-28;
+}
+
+/* ===== BOOK APPOINTMENT SECTION ===== */
+
+.book-appointment-section {
+  @apply pt-100 max-768:pt-60;
+}
+
+.book-appointment-card {
+  @apply relative rounded-card max-576:rounded-[10px] overflow-hidden flex items-center h-668 max-1024:h-460 max-768:h-380 max-576:h-420;
+}
+
+.book-appointment-bg {
+  @apply absolute inset-0 overflow-hidden;
+}
+
+.book-appointment-bg img {
+  @apply absolute w-full object-cover left-0 h-[180%] -top-[46%];
+  will-change: transform;
+}
+
+.book-appointment-overlay {
+  @apply absolute inset-0 bg-linear-to-l from-dark-blue/0 to-dark-blue z-1;
+  filter: blur(24px);
+}
+
+.book-appointment-content {
+  @apply relative z-2 flex flex-col gap-24 max-992:gap-16 max-576:gap-8 items-start pl-100 max-w-692 max-768:pl-60 max-576:pl-30;
+}
+
+.book-appointment-content p {
+  @apply font-kedebideri ;
+}
+
+.book-appointment-content h2 {
+  @apply max-1199:text-heading-3 max-768:text-heading-4;
+}
+
+/* ===== TESTIMONIALS SECTION ===== */
+
+.testimonials-section {
+  @apply bg-light-cream;
+}
+
+.testimonials-container {
+  @apply flex flex-col gap-44;
+}
+
+.testimonials-grid {
+  @apply grid-cols-3 gap-30 max-1024:grid-cols-2 max-768:grid-cols-1;
+}
+
+.testimonial-card {
+  @apply bg-white rounded-card max-576:rounded-[10px] overflow-hidden flex flex-col;
+  box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.16);
+}
+
+.testimonial-card-img {
+  @apply relative overflow-hidden shrink-0 h-277 max-576:h-210;
+}
+
+.testimonial-card-img img {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.testimonial-card-body {
+  @apply flex flex-col gap-8 p-24 max-576:p-20;
+}
+
+.testimonial-card-name p {
+  @apply uppercase tracking-label;
+}
+
+.testimonial-stars {
+  @apply flex items-center;
+}
+
+.testimonial-star {
+  @apply size-24 fill-dark-blue shrink-0;
+}
+
+
+.testimonial-card-body .content.content-muted p {
+  @apply font-century-gothic;
+}
+
+/* ===== GET IN TOUCH SECTION ===== */
+
+.get-in-touch-section {
+  @apply bg-white relative overflow-hidden;
+}
+
+.get-in-touch-pattern-wrap {
+  @apply absolute left-0 w-full bottom-0 pointer-events-none select-none h-540;
+}
+
+.get-in-touch-pattern {
+  @apply absolute inset-0 opacity-6 bg-repeat;
+  background-image: url("../../assets/images/meet-doctors-pattern.png");
+  background-size: 180px 150px;
+}
+
+.get-in-touch-pattern-fade {
+  @apply absolute inset-0 bg-linear-to-b from-white to-transparent;
+}
+
+.get-in-touch-container {
+  @apply relative z-1;
+}
+
+.get-in-touch-inner {
+  @apply flex items-center gap-120 max-1199:gap-60 max-1024:flex-col max-1024:gap-50 max-768:gap-30;
+}
+
+.get-in-touch-img-col {
+  @apply flex-1 rounded-card overflow-hidden relative self-stretch max-1024:w-full max-1024:self-auto max-1024:object-top aspect-840/720 max-1024:aspect-840/580 max-576:aspect-822/850 max-576:rounded-card-sm;
+}
+
+.get-in-touch-img-col img {
+  @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.get-in-touch-content {
+  @apply flex-1 flex flex-col gap-30;
+}
+
+.get-in-touch-heading {
+  @apply flex flex-col gap-24 max-768:gap-16;
+}
+
+.get-in-touch-heading h2 {
+  @apply text-heading-3;
+}
+
+.get-in-touch-form {
+  @apply flex flex-col gap-24 992:max-w-610;
+}
+
+.get-in-touch-form-grid {
+  @apply gap-x-24 gap-y-24 max-576:gap-x-16 max-576:gap-y-16 max-576:grid-cols-1;
+}
+
+.get-in-touch-field {
+  @apply flex flex-col opacity-90;
+}
+
+.get-in-touch-field label {
+  @apply text-16;
+}
+
+.get-in-touch-field input,
+.get-in-touch-field textarea {
+  @apply border-thin;
+}
+
+.get-in-touch-field textarea {
+  @apply h-111;
+}
+
+/* ===== GALLERY SECTION ===== */
+
+/* .gallery-section {
+    @apply bg-dark-blue flex flex-col gap-44 overflow-hidden;
+}
+
+.gallery-carousel-wrap {
+    @apply relative;
+}
+
+.gallery-swiper {
+    @apply overflow-visible cursor-pointer;
+}
+
+.gallery-swiper .swiper-wrapper {
+    @apply items-center;
+}
+
+.gallery-slide {
+    @apply relative overflow-hidden scale-80 transition-all duration-500 w-1053 max-992:w-660 max-768:w-480 max-576:w-320;
+    aspect-ratio: 1053 / 575;
+}
+
+.gallery-slide img {
+    @apply block w-full h-full object-cover;
+}
+
+.gallery-slide-overlay {
+    @apply absolute inset-0 bg-dark-blue/20 transition-all duration-500 ease-in-out;
+}
+
+.gallery-swiper.gallery-swiper-resetting .gallery-slide,
+.gallery-swiper.gallery-swiper-resetting .gallery-slide-overlay {
+    transition: none;
+}
+
+.gallery-swiper .swiper-slide-active.gallery-slide {
+    @apply scale-100 z-10;
+}
+
+.gallery-swiper .swiper-slide-active.gallery-slide .gallery-slide-overlay {
+    @apply hidden;
+} */
+
+/* ===== GALLERY SECTION ===== */
+/* ===== GALLERY SECTION ===== */
+
+.gallery-section {
+    @apply bg-dark-blue;
+}
+
+.gallery-header {
+    @apply flex flex-col items-center gap-24 mb-60 max-768:mb-40;
+}
+
+.gallery-label {
+    @apply flex items-center gap-9;
+}
+
+.gallery-dot {
+    @apply block w-6 h-6 rounded-full bg-white;
+}
+
+.gallery-label span:last-child {
+    @apply font-kedebideri text-16 text-white uppercase tracking-caption;
+}
+
+.gallery-carousel-wrap {
+    @apply relative w-full;
+}
+
+.gallery-swiper {
+    @apply overflow-visible;
+}
+
+.gallery-swiper .swiper-wrapper {
+    @apply items-center;
+}
+
+.gallery-slide {
+    @apply relative overflow-hidden cursor-grab will-change-transform
+           w-1053 aspect-1053/575 scale-y-75 transition-all duration-700 ease-in-out
+           max-992:w-700 max-768:w-480 max-576:w-340 max-425:w-270;
+}
+
+.gallery-slide:active {
+    @apply cursor-grabbing;
+}
+
+.gallery-slide img {
+    @apply block w-full h-full object-cover;
+}
+
+.gallery-slide-overlay {
+    @apply absolute inset-0 bg-dark-blue/50 transition-all duration-700;
+}
+
+ .gallery-swiper .swiper-slide.gallery-slide {
+  @apply mx-30 max-576:mx-15;
+}
+.gallery-swiper .swiper-slide-active.gallery-slide {
+    @apply scale-100 z-10 mx-0;
+}
+
+
+.gallery-swiper .swiper-slide-active.gallery-slide .gallery-slide-overlay {
+    @apply hidden;
+}
+
+
+
+
+.gallery-nav {
+    @apply flex items-center justify-center gap-16 mt-40 max-768:mt-24;
+}
+
+.gallery-nav-btn {
+    @apply size-48 max-768:size-32 shrink-0 cursor-pointer transition-opacity duration-300 hover:opacity-70 bg-white rounded-full grid place-items-center;
+}
+
+.gallery-nav-btn img {
+    @apply size-16 max-768:size-12 object-contain;
+}
+
+/* ===== ACCESSIBILITY ===== */
+
+.visually-hidden {
+    @apply sr-only;
+}

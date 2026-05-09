@@ -1,0 +1,149 @@
+/* ===== HTML / BODY ===== */
+
+html {
+    @apply scroll-smooth;
+}
+
+body {
+    @apply relative font-kedebideri text-16 text-black overflow-x-hidden;
+}
+
+a {
+    @apply no-underline text-inherit transition-colors duration-300;
+}
+
+/* ===== CONTAINERS ===== */
+
+.container-fluid {
+    @apply px-60 max-768:px-20;
+}
+
+/* ===== GENERAL PADDING ===== */
+
+.general-padding {
+    @apply py-100 max-1199:py-60 max-768:py-40;
+}
+
+/* ===== HEADING TAGS ===== */
+
+h1,
+.h1 {
+    @apply text-heading-1 font-cormorant-garamond font-bold leading-heading max-1199:text-heading-2 max-768:text-heading-3 max-425:text-heading-4;
+}
+
+h2,
+.h2 {
+    @apply text-heading-2 font-cormorant-garamond font-bold leading-heading max-1199:text-heading-3 max-768:text-heading-4;
+}
+
+h3,
+.h3 {
+    @apply text-heading-3 font-cormorant-garamond leading-heading max-1199:text-heading-4;
+}
+
+h4,
+.h4 {
+    @apply text-heading-4 font-cormorant-garamond leading-heading max-768:text-heading-5;
+}
+
+h5,
+.h5 {
+    @apply text-heading-5 font-kedebideri uppercase tracking-footer-heading max-768:text-heading-6;
+}
+
+h6,
+.h6 {
+    @apply text-heading-6 font-kedebideri leading-body;
+}
+
+/* ===== PARAGRAPH TAGS ===== */
+
+.content p {
+    @apply text-16 font-century-gothic max-768:text-14 leading-body;
+}
+
+.content p + p {
+    @apply mt-10;
+}
+
+/* ===== TITLE COLORS ===== */
+
+.title-white h1,
+.title-white h2,
+.title-white h3,
+.title-white h4,
+.title-white h5,
+.title-white h6 {
+    @apply text-white;
+}
+
+.title-dark-blue h1,
+.title-dark-blue h2,
+.title-dark-blue h3,
+.title-dark-blue h4,
+.title-dark-blue h5,
+.title-dark-blue h6 {
+    @apply text-dark-blue;
+}
+
+.title-black h1,
+.title-black h2,
+.title-black h3,
+.title-black h4,
+.title-black h5,
+.title-black h6 {
+    @apply text-black;
+}
+
+.title-granite h1,
+.title-granite h2,
+.title-granite h3,
+.title-granite h4,
+.title-granite h5,
+.title-granite h6 {
+    @apply text-granite;
+}
+
+.title-light-cream h1,
+.title-light-cream h2,
+.title-light-cream h3,
+.title-light-cream h4,
+.title-light-cream h5,
+.title-light-cream h6 {
+    @apply text-light-cream;
+}
+
+.title-smoke h1,
+.title-smoke h2,
+.title-smoke h3,
+.title-smoke h4,
+.title-smoke h5,
+.title-smoke h6 {
+    @apply text-smoke;
+}
+
+/* ===== CONTENT COLORS ===== */
+
+.content-white p {
+    @apply text-white;
+}
+
+.content-dark-blue p {
+    @apply text-dark-blue;
+}
+
+.content-black p {
+    @apply text-black;
+}
+
+.content-granite p {
+    @apply text-granite;
+}
+
+.content-light-cream p {
+    @apply text-light-cream;
+}
+
+.content-smoke p {
+    @apply text-smoke;
+}

@@ -1,0 +1,296 @@
+/* ===== HEADER ===== */
+
+header {
+    @apply absolute top-0 left-0  w-full z-50 flex items-stretch;
+}
+
+.header-logo {
+    @apply bg-white flex items-center justify-center px-24 py-12 shrink-0 w-300 max-1440:w-220 max-768:w-160 max-425:w-130 h-88.5 fixed top-0 left-0 z-999;
+}
+
+.header-logo a {
+    @apply flex items-center justify-center rounded-logo overflow-hidden;
+}
+
+.header-logo img {
+    @apply block w-179 h-74 object-contain;
+}
+
+.header-nav {
+    @apply bg-dark-blue flex-1 flex items-center justify-end;
+}
+
+.header-nav-links {
+    @apply flex items-center gap-32  flex-1 justify-end px-40 max-1199:hidden max-1512:gap-20  pr-220 py-21;
+}
+
+.header-nav-link {
+    @apply font-kedebideri text-16 text-white uppercase tracking-label py-4 whitespace-nowrap transition-opacity duration-300 hover:opacity-70;
+}
+
+.header-divider {
+    @apply block w-px self-stretch bg-white/30;
+}
+
+.header-phone {
+    @apply font-kedebideri text-heading-5 text-white uppercase whitespace-nowrap font-extrabold tracking-footer-item transition-opacity duration-300 hover:opacity-70;
+}
+
+.header-hamburger {
+    @apply bg-white fixed top-18 right-71 max-768:right-40 max-576:right-20 w-50 h-50 flex items-center justify-center flex-col gap-6 shrink-0 cursor-pointer self-stretch transition-opacity duration-300 hover:opacity-70 outline-none z-99;
+}
+
+.hamburger-line {
+    @apply block w-22 h-2 bg-dark-blue rounded-full;
+}
+
+/* ===== NAV DRAWER ===== */
+
+.nav-drawer {
+    @apply fixed inset-0 z-100 flex invisible pointer-events-none;
+}
+
+.nav-drawer.is-open {
+    @apply visible pointer-events-auto;
+}
+
+.nav-drawer-backdrop {
+    @apply flex-1 bg-granite/35 backdrop-blur-sm cursor-pointer opacity-0;
+}
+
+.nav-drawer-panel {
+    @apply bg-white flex flex-col overflow-y-auto shrink-0 relative w-750 max-1366:w-600 max-1024:w-480 max-576:w-full;
+}
+
+.nav-drawer-close {
+    @apply absolute top-18 right-71 max-576:top-30 max-576:right-40 w-50 h-50 max-576:w-30 max-576:h-30 bg-white flex items-center justify-center cursor-pointer text-dark-blue transition-opacity duration-300 hover:opacity-60 outline-none z-1;
+}
+
+.nav-drawer-content {
+    @apply flex flex-col items-center justify-center 1024:justify-end gap-26 px-60 py-60 max-1024:px-40 max-576:px-24 max-576:pt-90 max-576:gap-20;
+}
+
+.nav-drawer-links-primary {
+    @apply flex flex-col items-center gap-14;
+}
+
+.nav-drawer-link-primary {
+    @apply font-kedebideri text-[18px] text-granite uppercase tracking-footer-item leading-normal flex items-center gap-10 transition-opacity duration-300 hover:opacity-60 max-576:text-16;
+}
+
+.nav-drawer-links-secondary {
+    @apply flex flex-col items-center gap-14;
+}
+
+.nav-drawer-link-secondary {
+    @apply font-kedebideri text-16 text-granite uppercase tracking-nav leading-body transition-opacity duration-300 hover:opacity-60 max-576:text-13;
+}
+
+.nav-drawer-contact {
+    @apply flex flex-col items-center gap-10 px-40 pb-44 max-576:pb-24  shrink-0 max-576:px-24 max-576:pb-30;
+}
+
+.nav-drawer-contact-row {
+    @apply flex items-center gap-12 flex-wrap justify-center;
+}
+
+.nav-drawer-contact-info {
+    @apply font-century-gothic text-11 text-granite uppercase tracking-nav opacity-70;
+}
+
+.nav-drawer-contact-divider {
+    @apply block w-px h-12 bg-granite opacity-40;
+}
+
+.nav-drawer-contact-address {
+    @apply font-century-gothic text-11 text-granite uppercase tracking-nav text-center leading-body opacity-70;
+}
+
+.nav-drawer-social {
+    @apply flex items-center gap-8;
+}
+
+/* Services submenu toggle */
+.nav-drawer-services-toggle {
+    @apply bg-transparent border-0 cursor-pointer;
+}
+
+.nav-drawer-chevron {
+    @apply transition-transform duration-300;
+}
+
+.nav-drawer-services-toggle.is-open .nav-drawer-chevron {
+    @apply rotate-180;
+}
+
+.nav-drawer-submenu {
+    @apply flex flex-col items-center gap-10 overflow-hidden;
+    height: 0;
+}
+
+.nav-drawer-submenu-link {
+    @apply font-kedebideri text-16 text-granite uppercase tracking-nav leading-body transition-opacity duration-300 hover:opacity-60 max-576:text-13;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    @apply bg-dark-blue overflow-hidden;
+}
+
+/* ----- Footer 1: Main Footer — 5-column layout ----- */
+
+.footer-main {
+    @apply pt-62 pb-63 max-1199:py-50 max-768:py-40;
+}
+
+.footer-main-inner {
+    @apply flex max-576:flex-col items-start justify-between gap-40 max-1199:gap-30 max-1024:flex-wrap max-768:gap-24 max-576:gap-40;
+}
+
+.footer-col {
+    @apply flex flex-col gap-20 max-576:gap-16 shrink-0;
+}
+
+.footer-brand {
+    @apply max-1024:w-full;
+}
+
+.footer-logo-wrap {
+    @apply w-162 h-44 1024:h-56 rounded-btn overflow-hidden inline-flex items-center justify-center;
+}
+
+.footer-logo-wrap img {
+    @apply object-contain w-full h-full object-left;
+}
+
+.footer-brand .content p {
+    @apply font-century-gothic text-11 text-smoke leading-16 tracking-address;
+}
+
+.footer-col-label p {
+    @apply font-kedebideri text-12 uppercase tracking-footer-heading;
+}
+
+.footer-contact-label p {
+    @apply tracking-footer-heading;
+}
+
+.footer-nav {
+    @apply flex flex-col gap-12;
+}
+
+.footer-nav-link {
+    @apply font-kedebideri text-white uppercase no-underline transition-opacity duration-300 hover:opacity-70;
+}
+
+.footer-nav-lg .footer-nav-link {
+    @apply text-heading-5 max-768:text-lg tracking-footer-item leading-footer-link whitespace-nowrap;
+}
+
+.footer-nav-sm .footer-nav-link {
+    @apply text-15 tracking-nav leading-20;
+}
+
+.footer-hours-text p {
+    @apply font-kedebideri text-15 uppercase tracking-nav leading-20;
+}
+
+.footer-col-contact {
+    @apply gap-63;
+}
+
+.footer-contact-block {
+    @apply flex flex-col gap-20;
+}
+
+.footer-contact-info {
+    @apply flex flex-col gap-12;
+}
+
+.footer-contact-link {
+    @apply font-kedebideri text-15 text-white uppercase tracking-nav leading-20 no-underline transition-opacity duration-300 hover:opacity-70;
+}
+
+.footer-social {
+    @apply flex items-center gap-12;
+}
+
+.footer-social-link {
+    @apply size-39 flex items-center justify-center rounded-full bg-light-cream transition-opacity duration-300 hover:opacity-70;
+}
+
+.footer-social-link svg {
+    @apply fill-dark-blue
+}
+
+/* ----- Footer 2: Newsletter — background image + form ----- */
+
+.footer-newsletter {
+    @apply relative overflow-hidden py-118 max-1199:py-80 max-768:py-50;
+}
+
+.footer-newsletter-bg {
+    @apply absolute inset-0 overflow-hidden;
+}
+
+.footer-newsletter-bg img {
+    @apply absolute inset-0 w-full h-full object-cover;
+}
+
+.footer-newsletter-overlay {
+    @apply absolute inset-0 bg-dark-blue/70;
+}
+
+.footer-newsletter-inner {
+    @apply relative z-1 flex items-end justify-between gap-40 max-1024:flex-col max-1024:items-start max-1024:gap-30;
+}
+
+.footer-newsletter-text p {
+    @apply font-kedebideri text-heading-6 leading-normal max-w-414 max-1024:max-w-full;
+}
+
+.footer-newsletter-form {
+    @apply flex items-end gap-24 max-576:flex-col max-576:items-stretch max-576:gap-16;
+}
+
+.footer-newsletter-field {
+    @apply flex flex-col flex-1 min-w-200 992:min-w-260;
+}
+
+
+/* ----- Footer 3: Copyright bar ----- */
+
+.footer-bar {
+    @apply bg-dark-blue relative pt-20 pb-17 max-768:py-12;
+}
+
+.footer-bar-overlay {
+    @apply absolute inset-0 bg-black/30;
+}
+
+.footer-bar-inner {
+    @apply relative z-1 flex items-center justify-between gap-24 px-80 max-1199:px-60 max-768:px-20 max-576:flex-col max-576:gap-8 max-576:py-4;
+}
+
+.footer-bar-copyright p {
+    @apply font-century-gothic text-14 text-light-cream opacity-60 whitespace-nowrap;
+}
+
+.footer-legal-nav {
+    @apply flex items-center gap-12;
+}
+
+.footer-legal-link {
+    @apply font-century-gothic text-14 text-light-cream capitalize opacity-80 no-underline
+           transition-opacity duration-300 hover:opacity-100 whitespace-nowrap;
+}
+
+.footer-legal-divider {
+    @apply block w-px h-12 bg-light-cream opacity-80;
+}
+
+footer .btn {
+    @apply font-kedebideri text-15;
+}
+
